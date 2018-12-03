@@ -12,9 +12,9 @@ public abstract class Question
 	private String text;
 	private String solution;
 	
-	public Question(String inText)
+	public Question(String text)
 	{
-		text = inText;
+		this.text = text;
 	}
 	
 	public int getNumber()

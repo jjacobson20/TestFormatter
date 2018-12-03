@@ -11,11 +11,11 @@ public class MultipleChoice extends Question
 	private String[] answerChoices;
 	private char correctAnswer;
 	
-	public MultipleChoice(String inText, String[] choices, char correct)
+	public MultipleChoice(String text, String[] answerChoices, char correctAnswer)
 	{
-		super(inText);
-		answerChoices = choices;
-		correctAnswer = correct;
+		super(text);
+		this.answerChoices = answerChoices;
+		this.correctAnswer = correctAnswer;
 	}
 	
 	public String getSolution()
