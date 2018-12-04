@@ -7,7 +7,7 @@
  */
 public abstract class Question
 {
-	
+	private static int nextNumber = 1;
 	private int number;
 	private String text;
 	private String solution;
@@ -15,6 +15,8 @@ public abstract class Question
 	public Question(String text)
 	{
 		this.text = text;
+		number = nextNumber;
+		nextNumber++;
 	}
 	
 	public int getNumber()

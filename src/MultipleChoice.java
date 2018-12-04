@@ -25,6 +25,14 @@ public class MultipleChoice extends Question
 	
 	public String toString()
 	{
-		return "The correct answer is: " + correctAnswer;
+		String ques = "";
+		ques += this.getNumber() + ".) " + "____ " + this.getText() + "\n";
+		char choice = 'A';
+		for(String ans : answerChoices)
+		{
+			ques += "\t" + choice + ". " + ans + "\n";
+			choice++;
+		}
+		return ques;
 	}
 }
